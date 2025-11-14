@@ -1,3 +1,4 @@
+
 <!-- Chosen Palette: Ball State Cardinals (Cardinal Red/Maroon, Light Gray, White) -->
 <!-- Application Structure Plan: A fixed-sidebar dashboard structure designed for non-linear exploration. The main content is split into five thematic, scrollable sections: 1. Introduction (Persona/Mission), 2. Snapshot Dashboard (Metrics), 3. Academic Foundation (Lists/Charts), 4. Project Showcase (Filterable Cards), and 5. Experience & Recognition (Timelines/Lists). This structure prioritizes immediate delivery of the key personal story before diving into data. -->
 <!-- Visualization & Content Choices:
@@ -255,18 +256,18 @@ CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 
         // 1.1 PROFILE & BRANDING VARIABLES (REQUIRED)
         const profileData = {
-            studentName: "Chloe Frommem",
-            tagline: "Tax Consultation and Financial Planning",
+            studentName: "Chloe Fromme",
+            tagline: "Tax Consultant and Financial Planner",
             currentYear: "Junior", // Freshman, Sophomore, Junior, Senior
             major: "Accounting and Financial Planning",
             gpa: 3.5,
             impactScoreMultiplier: 10, // Adjusts how much projects/awards count towards total impact
             
             // --- INTRODUCTION & BRANDING FIELDS ---
-            photoUrl: "https://placehold.co/150x150/BA0C2F/FFFFFF/png?text=Chloe+F", // Replace with a URL to a professional headshot
+            photoUrl: "https://placehold.co/150x150/BA0C2F/FFFFFF/png?text=Fromme+C", // Replace with a URL to a professional headshot
             logoUrl: "https://placehold.co/40x40/BA0C2F/FFFFFF.png?text=BSU", // URL for your school logo or personal brand icon
-            personalBio: "I am a juniot driven by the idea of helping people with their taxes and helping them to make better financial decisions with their retirement and investment.",
-            missionStatement: "To help simplify and relieve stress with finances.",
+            personalBio: "I am a junior driven by helping finances and investments.",
+            missionStatement: "To help people save in taxes and to help eliviate stress in financial planning.",
         };
 
         /*
@@ -281,19 +282,19 @@ CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
         const academicData = [
             { name: "Financial Accounting and Reporting I", grade: "A", semester: "Fall 2025", relevance: "Accounting" },
             { name: "Professional Practice of Accounting", grade: "A", semester: "Fall 2025", relevance: "Accounting" },
+            { name: "Principles of Risk Management and Insurance", grade: "-", semester: "Spring 2026", relevance: "Financial Planning" },
             { name: "Principles of Finance", grade: "A", semester: "Fall 2025", relevance: "Finance" },
-            { name: "Principles of Risk Management and Insurance", grade: "-", semester: "Spring 2026", relevance: "Finance" },
-            { name: "Investments", grade: "-", semester: "Spring 2026", relevance: "Finance" },
+            { name: "Federal Taxation", grade: "-", semester: "Spring 2026", relevance: "Tax" },
         ];
 
         // 1.3 PROJECTS (REQUIRED: Follow C-S-R format)
-        const projectData = [1]
+        const projectData = [
             {
                 title: "AP Research Paper",
-                category: "Paper",
-                challenge: "Create a research paper that adds new knowledge to the field.",
-                solution: "Research how jump scares are created amongst the subgenres of horror and compared them together to try to find a common jump scare formula.",
-                result: "There are common formulas for jump scares in the subgenres, however there is not a common formula amongst all of horror. Each subgenres focuses on different ways to scare people so they build terror differently.",
+                category: "Research",
+                challenge: "Research a topic and add new information to the field.",
+                solution: "Researched the subgenres of horror to try to find a common jumpscare formula.",
+                result: "The subgenres rely on scaring people in different ways, so there is not a common formula across all of horror.",
                 link: ""
             },
             {
@@ -315,13 +316,13 @@ CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
         ];
 
         // 1.4 EXPERIENCE & AWARDS (REQUIRED)
-        const recognitionData = {2}
+        const recognitionData = {
             experience: [
-                { title: "Dean's List", type: "Award", duration: "Summer 2025", detail: "Was on the Dean's list for a 3.5 GPA in the Summer Semester  at Ball State" },
-                { title: "Series 65 Certification", type: "Professional Development", duration: "Expected Winter 2025", detail: "Passed FINRA's Series 65 certification examination to become a IAR." },
+                { title: "Series 65 Certification", type: "Continuing Education", duration: "Dec 2025", detail: "Passed Series 65 examination and received the certification." },
+                { title: "", type: "", duration: "", detail: "" },
             ],
             awards: [
-                { title: "", duration: "", detail: "" },
+                { title: "Dean's List", duration: "Summer 2025", detail: "Achieved a **3.5 GPA**." },
                 { title: "", duration: "", detail: "" },
             ]
         };
